@@ -1,1 +1,0 @@
-# natanocr.github.io
