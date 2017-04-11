@@ -3,11 +3,23 @@ branches:
   only:
   - pelican
 language: python
+before_install:
+# troque a linha abaixo pelo resultado do comando:
+# travis encrypt-file publish-key
+# porém mantenha o final:
+# -out ~/.ssh/publish-key -d
+- openssl aes-256-cbc -K $encrypted_b97e2cc36a6e_key -iv $encrypted_b97e2cc36a6e_iv -in publish-key.enc -out publish-key -d
+- chmod u=rw,og= ~/.ssh/publish-key
+- echo "Host github.com" >> ~/.ssh/config
+- echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
+# substitua git@github.com:humrochagf/humrochagf.github.io.git
+# pelo endereço de acesso ssh do seu repositório
+- git remote set-url origin git@github.com:humrochagf/humrochagf.github.io.git
+# Caso esteja montando a página de projeto troque master:master
+# por gh-pages:gh-pages
+- git fetch origin -f master:master
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
 - make github
-env:
-  global:
-    secure: AOhF6/y2PEFksEPmW72+5TSDKBD4CVSM6HAM1XN5Bib0Y4yVx9ISiaD343g64/gZWM8G9t3DaDIn5i6uqN1+EviIeixpDB7pq5Ts/xGoxTiL3NWaIX/LWV6Nm7aRnnYO5n1gi+wDa9UWwqC7OD4F9D1rIsBzcrMFj51lconq6ACCPuGBQ6WM493oF26CUGRJAXzgUcDiJ2/nLm+c+XCUnvWF8F9he9oSa6r/3fOcxz+/Yk48QA2z2GVSYojwGk8xjyhPPZ5woCpYsDQp/Xr+XERkEoRITVL5gv2sFfH7GUg1UZ6xwTbcEi65HjOXP4CUQtvDF8PHbNYk2u/yYZJPmI+X1skP5ynsXxqchtNUCFYFvEbQF39CvoHTZe3UxAJGvsZnSQs83joF0Oyyi1QVcI+KCkxF5Z30QWRBrbxsXBBA2kDC2KIMF8AM8wyiNdfuWMNVmsjybsQRK1CO/FaaqvCw0G7szw85a/vMMsnQQvLe+gk/x1YJ+aOt+ljFOizs7fs/kjQiFtPGLK9I3tLTICye9RE5ujty+R0Np0NdBPOueBGl0lsX4AvIKKQJ06P5jeMAxjGmcN3BuCPy72T92Iz5KdZYk/q/hvc5KFEQIKgccPfJ9C5Ni9TDS2Q3x+N5C5MEYeSWjdC92EgTVxzIigMuj/qnHxdQU7BLnXyJ3WM=
