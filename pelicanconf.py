@@ -30,9 +30,6 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
-# Blogroll
-LINKS = ((),)
-
 # Social widget
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/natanocr/en'),
           ('github', 'https://github.com/natanocr'),
