@@ -31,12 +31,13 @@ MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
 # Blogroll
-LINKS = (('rss', 'https://natanocr.github.io/feeds/all.atom.xml'),)
+LINKS = ((),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/natanocr/en'),
           ('github', 'https://github.com/natanocr'),
-          ('twitter', 'https://twitter.com/natanocr'))
+          ('twitter', 'https://twitter.com/natanocr'),
+          ('rss', 'https://natanocr.github.io/feeds/all.atom.xml'))
 
 
 MENUITEMS = (('Archives', '/archives.html'),
