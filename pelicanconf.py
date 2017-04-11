@@ -37,7 +37,7 @@ LINKS = (())
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/natanocr/en'),
           ('github', 'https://github.com/natanocr'),
           ('twitter', 'https://twitter.com/natanocr'),
-          ('rss', '//blog.alexandrevicenzi.com/feeds/all.atom.xml'))
+          ('rss', '//natanocr.github.io//feeds/all.atom.xml'))
 
 
 MENUITEMS = (('Archives', '/archives.html'),
