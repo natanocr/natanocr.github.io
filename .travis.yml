@@ -1,11 +1,10 @@
 sudo: false
-language: python
-python:
-  - "3.4.2"
 branches:
   only:
   - pelican
 language: python
+python:
+  - "3.4.2"
 before_install:
 # troque a linha abaixo pelo resultado do comando:
 # travis encrypt-file publish-key
@@ -17,7 +16,7 @@ before_install:
 - echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
 # substitua git@github.com:humrochagf/humrochagf.github.io.git
 # pelo endereço de acesso ssh do seu repositório
-- git remote set-url origin git@github.com:humrochagf/humrochagf.github.io.git
+- git remote set-url origin git@github.com:natanocr/natanocr.github.io.git
 # Caso esteja montando a página de projeto troque master:master
 # por gh-pages:gh-pages
 - git fetch origin -f master:master
