@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>NatanOCR - Natan Oliveira Blog - test</title><link href="https://natanocr.github.io/" rel="alternate"></link><link href="https://natanocr.github.io/feeds/test.atom.xml" rel="self"></link><id>https://natanocr.github.io/</id><updated>2017-04-11T00:00:00-03:00</updated><entry><title>post test</title><link href="https://natanocr.github.io/test.html" rel="alternate"></link><published>2017-04-11T00:00:00-03:00</published><updated>2017-04-11T00:00:00-03:00</updated><author><name>Natan Oliveira</name></author><id>tag:natanocr.github.io,2017-04-11:/test.html</id><summary type="html">&lt;p&gt;Some bugs are now fixed. I think the most important fixes are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/21"&gt;Bug in CSS with placement of "Newer Posts" button&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/14"&gt;Posts preview on main page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hope you enjoy this theme.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some bugs are now fixed. I think the most important fixes are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/21"&gt;Bug in CSS with placement of "Newer Posts" button&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/14"&gt;Posts preview on main page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hope you enjoy this theme.&lt;/p&gt;</content><category term="test"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>NatanOCR - Natan Oliveira Blog - test</title><link href="https://natanocr.github.io/" rel="alternate"></link><link href="https://natanocr.github.io/feeds/test.atom.xml" rel="self"></link><id>https://natanocr.github.io/</id><updated>2017-04-11T00:00:00-03:00</updated><entry><title>post test</title><link href="https://natanocr.github.io/test.html" rel="alternate"></link><published>2017-04-11T00:00:00-03:00</published><updated>2017-04-11T00:00:00-03:00</updated><author><name>Natan Oliveira</name></author><id>tag:natanocr.github.io,2017-04-11:/test.html</id><summary type="html">&lt;p&gt;apenas um test&lt;/p&gt;</summary><content type="html">&lt;p&gt;apenas um test&lt;/p&gt;</content><category term="test"></category></entry></feed>
