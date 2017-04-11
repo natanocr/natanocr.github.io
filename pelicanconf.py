@@ -31,7 +31,8 @@ MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
 # Blogroll
-LINKS = ((),)
+LINKS = (('about','https://natanocr.github.io/pages/about.html'),
+		 ('contact','https://natanocr.github.io/pages/contact.html'),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/natanocr/en'),
