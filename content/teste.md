@@ -4,6 +4,7 @@ Category: test
 Tags: test
 Slug: test
 
+
 apenas um test
 
-Hope you enjoy this theme.
+
