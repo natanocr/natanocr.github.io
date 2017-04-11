@@ -45,8 +45,19 @@ MENUITEMS = (('Archives', '/archives.html'),
              ('Tags', '/tags.html'),)
 
 DISQUS_SITENAME = "natanocr"
-ADD_THIS_ID = 'ra-5624ff844f060dbc'
-
+ADD_THIS_ID = 'ra-58ec12b388fb9915'
+GOOGLE_ADSENSE = {
+    'ca_id': 'ca-pub-8638263036572863',
+    'page_level_ads': True,
+    'ads': {
+        'aside': '5340595560',
+        'main_menu': '',
+        'index_top': '',
+        'index_bottom': '9584371569',
+        'article_top': '',
+        'article_bottom': '7257980762',
+    }
+}
 
 DEFAULT_PAGINATION = 10
 
