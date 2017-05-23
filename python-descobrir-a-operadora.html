@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="https://natanocr.github.io/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="https://natanocr.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="NatanOCR - Natan Oliveira Blog Atom">
+    <link href="https://natanocr.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="NatanOCR - Natan Oliveira's Blog Atom">
 
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -31,22 +31,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <meta name="author" content="Natan Oliveira" />
-<meta name="description" content="apenas um test" />
-<meta name="keywords" content="test">
-<meta property="og:site_name" content="NatanOCR - Natan Oliveira Blog"/>
-<meta property="og:title" content="post test"/>
-<meta property="og:description" content="apenas um test"/>
+<meta name="description" content="Esta é uma forma simples e rápida para descobrir qual a operadora de um determinado número. Necessitamos apenas da requisição de uma url com Requests e posteriormente da análise do código html retornado com a ajuda do BeautifulSoup. TODO Requisitar com um post a url que fornece a informação que …" />
+<meta name="keywords" content="tutorial, python, operadora">
+<meta property="og:site_name" content="NatanOCR - Natan Oliveira's Blog"/>
+<meta property="og:title" content="Python descobrir a operadora"/>
+<meta property="og:description" content="Esta é uma forma simples e rápida para descobrir qual a operadora de um determinado número. Necessitamos apenas da requisição de uma url com Requests e posteriormente da análise do código html retornado com a ajuda do BeautifulSoup. TODO Requisitar com um post a url que fornece a informação que …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://natanocr.github.io/test.html"/>
+<meta property="og:url" content="https://natanocr.github.io/python-descobrir-a-operadora.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2017-04-11 00:00:00-03:00"/>
-<meta property="article:modified_time" content=""/>
+<meta property="article:published_time" content="2017-05-22 21:00:00-03:00"/>
+<meta property="article:modified_time" content="2017-05-22 21:00:00-03:00"/>
 <meta property="article:author" content="https://natanocr.github.io/author/natan-oliveira.html">
-<meta property="article:section" content="test"/>
-<meta property="article:tag" content="test"/>
-<meta property="og:image" content="//s.gravatar.com/avatar/8aaa554ca377fbcdb5f22bf0260821df?s=80">
+<meta property="article:section" content="Python"/>
+<meta property="article:tag" content="tutorial"/>
+<meta property="article:tag" content="python"/>
+<meta property="article:tag" content="operadora"/>
+<meta property="og:image" content="https://natanocr.github.io/images/python-descobrir-a-operadora.png">
 
-  <title>NatanOCR - Natan Oliveira Blog &ndash; post test</title>
+  <title>NatanOCR - Natan Oliveira's Blog &ndash; Python descobrir a operadora</title>
 
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
@@ -64,7 +66,7 @@
       </a>
       <h1><a href="https://natanocr.github.io">Natan Oliveira</a></h1>
 
-<p>Analista de Sistemas</p>
+<p>Systems Analyst</p>
       <nav>
         <ul class="list">
           <li><a href="https://natanocr.github.io/pages/about.html#about">About</a></li>
@@ -107,9 +109,9 @@
 
 <article class="single">
   <header>
-    <h1 id="test">post test</h1>
+    <h1 id="python-descobrir-a-operadora">Python descobrir a operadora</h1>
     <p>
-          Posted on Tue 11 April 2017 in <a href="https://natanocr.github.io/category/test.html">test</a>
+          Posted on Mon 22 May 2017 in <a href="https://natanocr.github.io/category/python.html">Python</a>
 
 
     </p>
@@ -117,11 +119,34 @@
 
 
   <div>
-    <p>apenas um test</p>
+    <p>Esta é uma forma simples e rápida para descobrir qual a operadora de um determinado número. Necessitamos apenas da requisição de uma url com <a href="http://docs.python-requests.org">Requests</a> e posteriormente da análise do código html retornado com a ajuda do  <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a>.</p>
+<h3>TODO</h3>
+<ul>
+<li>Requisitar com um post a url que fornece a informação que procuramos.</li>
+<li>Nessa requisição passamos como parametro o numero de celular e o paramentro <strong>verify=False</strong>, este úiltimo serve para contornar erros do ssl do servidor casa haja.</li>
+<li>Passamos os dados retornados para o <strong>BeautifulSoup</strong> para que este nos auxilie a a parsear o html.</li>
+<li>Na análise do html vamos procurar pelo tag exata que retorna a operadora e retornamos a informação encntrada.</li>
+</ul>
+<h4>MÃOS A OBRA</h4>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="k">def</span> <span class="nf">get_operadora</span><span class="p">(</span><span class="n">fone</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://www.qual-operadora.net/#fb-root&#39;</span><span class="p">,</span>
+                        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;numero&#39;</span><span class="p">:</span><span class="n">fone</span><span class="p">},</span> <span class="n">verify</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="s2">&quot;class&quot;</span> <span class="p">:</span> <span class="s2">&quot;verde&quot;</span> <span class="p">})</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<p>Espero que gostem.</p>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://natanocr.github.io/tag/test.html">test</a>
+      <a href="https://natanocr.github.io/tag/tutorial.html">tutorial</a>
+      <a href="https://natanocr.github.io/tag/python.html">python</a>
+      <a href="https://natanocr.github.io/tag/operadora.html">operadora</a>
     </p>
   </div>
 
@@ -181,7 +206,7 @@
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " NatanOCR - Natan Oliveira Blog ",
+  "name": " NatanOCR - Natan Oliveira's Blog ",
   "url" : "https://natanocr.github.io",
   "image": "//s.gravatar.com/avatar/8aaa554ca377fbcdb5f22bf0260821df?s=80",
   "description": ""
