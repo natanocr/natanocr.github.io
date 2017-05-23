@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Natan Oliveira'
 SITEURL = 'http://localhost:8000'
-SITENAME = 'NatanOCR - Natan Oliveira Blog'
+SITENAME = "NatanOCR - Natan Oliveira's Blog"
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Analista de Sistemas'
+SITESUBTITLE = 'Systems Analyst'
 SITELOGO = '//s.gravatar.com/avatar/8aaa554ca377fbcdb5f22bf0260821df?s=80'
 FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
@@ -41,8 +41,25 @@ MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),)
 
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.6,
+        'indexes': 0.6,
+        'pages': 0.5,
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'monthly',
+    }
+}
+
 DISQUS_SITENAME = "natanocr"
 ADD_THIS_ID = 'ra-58ec12b388fb9915'
+
+STATIC_PATHS = ['images']
+
 GOOGLE_ADSENSE = {
     'ca_id': 'ca-pub-8638263036572863',
     'page_level_ads': True,
