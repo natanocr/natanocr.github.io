@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>NatanOCR - Natan Oliveira's Blog - Python, Django, crawler</title><link href="https://natanocr.github.io/" rel="alternate"></link><link href="https://natanocr.github.io/feeds/python-django-crawler.atom.xml" rel="self"></link><id>https://natanocr.github.io/</id><updated>2017-09-16T01:15:00-03:00</updated><entry><title>Criando comandos customizados para o django</title><link href="https://natanocr.github.io/criando-comandos-customizados-para-o-django.html" rel="alternate"></link><published>2017-09-16T01:00:00-03:00</published><updated>2017-09-16T01:15:00-03:00</updated><author><name>Natan Oliveira</name></author><id>tag:natanocr.github.io,2017-09-16:/criando-comandos-customizados-para-o-django.html</id><summary type="html">&lt;p&gt;:author: Natan Oliveira - @natanocr
-Tags: tutorial, python, Django, crawler
-Slug: criando-comandos-customizados-para-o-django
-Cover: images/criando-comandos-customizados-para-o-django.png&lt;/p&gt;
-&lt;p&gt;Recentemente estava desenvolvendo um projeto pessoal que era simples mas acabei batendo cabeça por algumas horas a fio, para em fim encontrar essa solução tão simples. Meu objetivo era integrar um crawler simples de poucas …&lt;/p&gt;</summary><content type="html">&lt;p&gt;:author: Natan Oliveira - @natanocr
-Tags: tutorial, python, Django, crawler
-Slug: criando-comandos-customizados-para-o-django
-Cover: images/criando-comandos-customizados-para-o-django.png&lt;/p&gt;
-&lt;p&gt;Recentemente estava desenvolvendo um projeto pessoal que era simples mas acabei batendo cabeça por algumas horas a fio, para em fim encontrar essa solução tão simples. Meu objetivo era integrar um crawler simples de poucas linhas, ao meu site Django, porém sem sucesso. Estava preso em um bug onde o meu crawler não conseguia reconhecer o caminho para o models da app django, desta forma não conseguia salvar as informações raspadas.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>NatanOCR - Natan Oliveira's Blog - Python, Django, crawler</title><link href="https://natanocr.github.io/" rel="alternate"></link><link href="https://natanocr.github.io/feeds/python-django-crawler.atom.xml" rel="self"></link><id>https://natanocr.github.io/</id><updated>2017-09-16T01:15:00-03:00</updated><entry><title>Criando comandos customizados para o django</title><link href="https://natanocr.github.io/criando-comandos-customizados-para-o-django.html" rel="alternate"></link><published>2017-09-16T01:00:00-03:00</published><updated>2017-09-16T01:15:00-03:00</updated><author><name>Natan Oliveira - @natanocr</name></author><id>tag:natanocr.github.io,2017-09-16:/criando-comandos-customizados-para-o-django.html</id><summary type="html">&lt;p&gt;Recentemente estava desenvolvendo um projeto pessoal que era simples mas acabei batendo cabeça por algumas horas a fio, para em fim encontrar essa solução tão simples. Meu objetivo era integrar um crawler simples de poucas linhas, ao meu site Django, porém sem sucesso. Estava preso em um bug onde o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Recentemente estava desenvolvendo um projeto pessoal que era simples mas acabei batendo cabeça por algumas horas a fio, para em fim encontrar essa solução tão simples. Meu objetivo era integrar um crawler simples de poucas linhas, ao meu site Django, porém sem sucesso. Estava preso em um bug onde o meu crawler não conseguia reconhecer o caminho para o models da app django, desta forma não conseguia salvar as informações raspadas.&lt;/p&gt;
 &lt;p&gt;Enfim minha solução foi criar um comando personalizado para minha app, nesse comando consigo rápido e fácilmente acessar o crawler por meio do manager.py do próprio Django&lt;/p&gt;
 &lt;h3&gt;TODO&lt;/h3&gt;
 &lt;ul&gt;
@@ -52,4 +44,5 @@ Cover: images/criando-comandos-customizados-para-o-django.png&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Espero que gostem.&lt;/p&gt;</content></entry></feed>
+&lt;p&gt;Fonte: &lt;a href="https://docs.djangoproject.com/pt-br/1.11/howto/custom-management-commands/"&gt;Escrevendo comandos personalizados do django-admin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Espero que gostem.&lt;/p&gt;</content><category term="tutorial"></category><category term="python"></category><category term="Django"></category><category term="crawler"></category></entry></feed>
