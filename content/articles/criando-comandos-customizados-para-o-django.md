@@ -2,7 +2,7 @@ Title: Criando comandos customizados para o django
 Date: 2017-09-16 01:00
 Modified: 2017-09-16 01:15
 Category: Python, Django, crawler
-:author: Natan Oliveira - @natanocr
+author: Natan Oliveira - @natanocr
 Tags: tutorial, python, Django, crawler
 Slug: criando-comandos-customizados-para-o-django
 Cover: images/criando-comandos-customizados-para-o-django.png
@@ -54,4 +54,6 @@ O help para este comando personalisado pode ser acessado deste modo.
 ```
 > python manager.py crawler help
 ```
+Fonte: [Escrevendo comandos personalizados do django-admin](https://docs.djangoproject.com/pt-br/1.11/howto/custom-management-commands/)
+
 Espero que gostem.
