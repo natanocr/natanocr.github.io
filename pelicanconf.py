@@ -7,7 +7,7 @@ SITEURL = 'http://localhost:8000'
 SITENAME = "NatanOCR - Natan Oliveira's Blog"
 SITETITLE = AUTHOR
 SITESUBTITLE = 'Systems Analyst'
-SITELOGO = '//s.gravatar.com/avatar/8aaa554ca377fbcdb5f22bf0260821df?s=80'
+SITELOGO = '//s.gravatar.com/avatar/8aaa554ca377fbcdb5f22bf0260821df?s=200'
 FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
 PYGMENTS_STYLE = 'monokai'
